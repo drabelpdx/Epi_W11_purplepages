@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wikipages</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="page-header text-center">
+        <%= link_to 'The Purple Pages', types_path %>
+      </h1>
+
+      <div class="col-sm-6 col-sm-offset-3">
+        <%= yield %>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

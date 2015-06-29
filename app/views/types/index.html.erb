@@ -1,0 +1,11 @@
+<%= link_to 'Add a business type', new_type_path, class: "btn btn-default stretch" %>
+
+<h4>Business Types:</h4>
+
+<ul class="list-unstyled">
+  <% @types.each do |type| %>
+    <li>
+      <%= link_to type.name, type_path(type) %>
+    </li>
+  <% end %>
+</ul>
